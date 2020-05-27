@@ -1,4 +1,6 @@
-<button class="button @Class @Loading" disabled="@Disabled"> @ChildContent </button>
+<button class="button @Class @Loading" disabled=@Disabled type=@Type> 
+    @ChildContent 
+</button>
 
 @code {
     [Parameter]
@@ -12,6 +14,9 @@
 
     [Parameter]
     public string Class { get; set; }
+
+    [Parameter]
+    public string Type { get; set; }
 
     private string Loading => IsLoading ? "is-loading" : "";
 }

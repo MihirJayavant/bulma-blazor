@@ -1,27 +1,17 @@
 @page "/"
 
-<div class="container">
-    <Button>Button</Button>
-</div>
+<Snippet>
+    <Output>
+        <Button>Button</Button>
+        <Button Type="submit">Submit</Button>
+        <Button Type="reset">Reset</Button>
+    </Output>
+    <Code>
+@("<Button>Button</Button>")
+@("<Button Type=\"submit\">Submit</Button>")
+@("<Button Type=\"reset\">Reset</Button>")        
+    </Code>
+</Snippet>
 
-<div class="container">
-    <div class="buttons">
-        <Button class="Button is-primary">Primary</Button>
-        <Button class="Button is-link">Link</Button>
-    </div>
-</div>
-
-<div class="container">
-    <div class="buttons">
-        <Button class="Button is-info">Info</Button>
-        <Button class="Button is-success">Success</Button>
-        <Button class="Button is-warning" Disabled=@true>Warning</Button>
-        <Button class="Button is-danger" IsLoading=@true>Danger</Button>
-    </div>
-</div>
-
-<div class="container">
-    <code>
-        hi
-    </code>
-</div>
+@code {
+}

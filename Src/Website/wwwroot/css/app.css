@@ -25,3 +25,16 @@
   background-color: hsl(204, 86%, 53%);
   color: white;
 }
+
+pre code {
+  color: #f14668
+}
+
+.output {
+  padding: 10px;
+}
+
+.snippet {
+  border: 1px solid hsl(0, 0%, 90%);
+  margin: 10px;
+}
