@@ -1,0 +1,27 @@
+﻿.sidenav {
+  height: 100vh;
+}
+
+.main-body {
+  height: 100vh;
+}
+
+.sidenav .item {
+  width: 100%;
+  color: hsl(0, 0%, 21%);
+}
+
+.sidenav .item div {
+  height: 45px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.sidenav .item div:hover {
+  background-color: hsl(0, 0%, 71%);
+}
+
+.sidenav .active div {
+  background-color: hsl(204, 86%, 53%);
+  color: white;
+}
