@@ -1,3 +1,4 @@
+@inject IJSRuntime jsRuntime
 
 <div class="snippet">
     <div class="columns">
@@ -8,7 +9,7 @@
         </div>
         <div class="column is-6">
             <div class="code">
-                <pre> <code class="html"> @Code </code> </pre>
+                <pre> <code class="html" @ref="codeRef"> @Code </code> </pre>
             </div>
         </div>
     </div>
@@ -20,5 +21,15 @@
 
     [Parameter]
     public RenderFragment Code { get; set; }
+
+    private ElementReference codeRef;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await jsRuntime.InvokeVoidAsync("w3CodeColor", codeRef);
+        }
+    }
 
 }
