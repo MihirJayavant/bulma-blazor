@@ -1,0 +1,94 @@
+@page "/"
+
+<!--Default button-->
+<Snippet>
+    <Output>
+        <Button>Button</Button>
+        <Button Type="submit">Submit</Button>
+        <Button Type="reset">Reset</Button>
+    </Output>
+    <Code>
+@("<Button>Button</Button>")
+@("<Button Type=\"submit\">Submit</Button>")
+@("<Button Type=\"reset\">Reset</Button>") 
+    </Code>
+</Snippet>
+
+<!--Color button-->
+<Snippet>
+    <Output>
+        <div class="buttons">
+            <Button class="is-primary">Primary</Button>
+            <Button class="is-link">Link</Button>
+        </div>
+
+        <div class="buttons">
+            <Button class="is-info">Info</Button>
+            <Button class="is-success">Success</Button>
+            <Button class="is-warning">Warning</Button>
+            <Button class="is-danger">Danger</Button>
+        </div>
+    </Output>
+    <Code>
+@("<div class=\"buttons\">")
+    @("<Button class=\"is-primary\">Primary</Button>")
+    @("<Button class=\"is-link\">Link</Button>")
+@("</div>") 
+@("<div class=\"buttons\">")
+    @("<Button class=\"is-info\">Info</Button>")
+    @("<Button class=\"is-success\">Success</Button>")
+    @("<Button class=\"is-warning\">Warning</Button>")
+    @("<Button class=\"is-danger\">Danger</Button>")
+@("<div class=\"buttons\">")
+    </Code>
+</Snippet>
+
+<!--Light color button-->
+<Snippet>
+    <Output>
+        <div class="buttons">
+            <Button class="is-primary is-light">Primary</Button>
+            <Button class="is-link is-light">Link</Button>
+        </div>
+
+        <div class="buttons">
+            <Button class="is-info is-light">Info</Button>
+            <Button class="is-success is-light">Success</Button>
+            <Button class="is-warning is-light">Warning</Button>
+            <Button class="is-danger is-light">Danger</Button>
+        </div>
+    </Output>
+    <Code>
+@("<div class=\"buttons\">")
+    @("<Button class=\"is-primary is-light\">Primary</Button>")
+    @("<Button class=\"is-link is-light\">Link</Button>")
+@("</div>") 
+@("<div class=\"buttons\">")
+    @("<Button class=\"is-info is-light\">Info</Button>")
+    @("<Button class=\"is-success is-light\">Success</Button>")
+    @("<Button class=\"is-warning\">Warning</Button>")
+    @("<Button class=\"is-danger is-light\">Danger</Button>")
+@("<div class=\"buttons\">")
+    </Code>
+</Snippet>
+
+<!--B/W button-->
+<Snippet>
+    <Output>
+        <Button class="is-white">White</Button>
+        <Button class="is-light">Light</Button>
+        <Button class="is-dark">Dark</Button>
+        <Button class="is-black">Black</Button>
+        <Button class="is-text">Text</Button>
+    </Output>
+    <Code>
+@("<Button class=\"is-white\">White</Button>")
+@("<Button class=\"is-light\">Light</Button>")
+@("<Button class=\"is-dark\">Dark</Button>")
+@("<Button class=\"is-black\">Black</Button>") 
+@("<Button class=\"is-text\">Text</Button>")       
+    </Code>
+</Snippet>
+
+@code {
+}
