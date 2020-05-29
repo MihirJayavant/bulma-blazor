@@ -1,27 +1,27 @@
 @implements ITab
 
 
-<li @onclick="Activate" class="@TitleCssClass"><a>@ChildContent</a></li>
+<li @onclick="Activate" class="@ActiveClass"><a>@ChildContent</a></li>
 
 @code {
     [CascadingParameter]
     public Tabs ContainerTabSet { get; set; }
 
     [Parameter]
-    public string Title { get; set; }
+    public string Name { get; set; }
 
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 
-    private string TitleCssClass => ContainerTabSet.ActiveTab == this ? "is-active" : null;
+    private string ActiveClass => ContainerTabSet.ActiveName == Name ? "is-active" : null;
 
     protected override void OnInitialized()
     {
-        ContainerTabSet.AddTab(this);
+        ContainerTabSet.AddTab( Name );
     }
 
     private void Activate()
     {
-        ContainerTabSet.SetActivateTab(this);
+        ContainerTabSet.SetActivateTab( Name );
     }
 }

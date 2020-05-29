@@ -1,12 +1,12 @@
 @page "/tabs"
 
-<Tabs @bind-ActiveTab="active" >
+<Tabs @bind-ActiveTab="tabSelected" >
     <Tab Title="Music">Music</Tab>
     <Tab Title="Picture">Picture</Tab>
 </Tabs>
 
-<span>@active?.Title</span>
+<span>@tabSelected</span>
 
 @code {
-    ITab active;
+    string tabSelected;
 }

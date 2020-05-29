@@ -8,40 +8,39 @@
 </CascadingValue>
 
 @code {
-  //
-      [Parameter]
-      public RenderFragment ChildContent { get; set; }
+    //
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
 
-      [Parameter]
-      public ITab ActiveTab { get; set; }
+    [Parameter]
+    public string ActiveName { get; set; }
 
-      [Parameter]
-      public EventCallback<ITab> ActiveTabChanged { get; set; }
+    [Parameter]
+    public EventCallback<string> ActiveTabChanged { get; set; }
 
-      public void AddTab(ITab tab)
-      {
-          if (ActiveTab == null)
-          {
-              SetActivateTab(tab);
-              Console.WriteLine(tab.Title);
-          }
-      }
+    public void AddTab( string activeName )
+    {
+        if ( ActiveName == null )
+        {
+            SetActivateTab( activeName );
+        }
+    }
 
-      public void RemoveTab(ITab tab)
-      {
-          if (ActiveTab == tab)
-          {
-              SetActivateTab(null);
-          }
-      }
+    public void RemoveTab( string activeName )
+    {
+        if ( ActiveName == activeName )
+        {
+            SetActivateTab( null );
+        }
+    }
 
-      public void SetActivateTab(ITab tab)
-      {
-          if (ActiveTab != tab)
-          {
-              ActiveTab = tab;
-              ActiveTabChanged.InvokeAsync(tab);
-              StateHasChanged();
-          }
-      }
+    public void SetActivateTab( string activeName )
+    {
+        if ( ActiveName != activeName )
+        {
+            ActiveName = activeName;
+            ActiveTabChanged.InvokeAsync( activeName );
+            StateHasChanged();
+        }
+    }
 }
