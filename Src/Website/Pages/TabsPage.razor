@@ -1,0 +1,12 @@
+@page "/tabs"
+
+<Tabs @bind-ActiveTab="active" >
+    <Tab Title="Music">Music</Tab>
+    <Tab Title="Picture">Picture</Tab>
+</Tabs>
+
+<span>@active?.Title</span>
+
+@code {
+    ITab active;
+}

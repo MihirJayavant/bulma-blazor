@@ -1,0 +1,47 @@
+
+<CascadingValue Value=this>
+<div class="tabs">
+  <ul>
+    @ChildContent
+  </ul>
+</div>
+</CascadingValue>
+
+@code {
+  //
+      [Parameter]
+      public RenderFragment ChildContent { get; set; }
+
+      [Parameter]
+      public ITab ActiveTab { get; set; }
+
+      [Parameter]
+      public EventCallback<ITab> ActiveTabChanged { get; set; }
+
+      public void AddTab(ITab tab)
+      {
+          if (ActiveTab == null)
+          {
+              SetActivateTab(tab);
+              Console.WriteLine(tab.Title);
+          }
+      }
+
+      public void RemoveTab(ITab tab)
+      {
+          if (ActiveTab == tab)
+          {
+              SetActivateTab(null);
+          }
+      }
+
+      public void SetActivateTab(ITab tab)
+      {
+          if (ActiveTab != tab)
+          {
+              ActiveTab = tab;
+              ActiveTabChanged.InvokeAsync(tab);
+              StateHasChanged();
+          }
+      }
+}
