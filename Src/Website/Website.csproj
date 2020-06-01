@@ -17,4 +17,8 @@
     <Watch Include="wwwroot\**\*.css" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BulmaBlazor\BulmaBlazor.csproj" />
+  </ItemGroup>
+
 </Project>

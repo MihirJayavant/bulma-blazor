@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{A8C204A9-852
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Src\Website\Website.csproj", "{4CF5E48C-EA76-4B43-B2DD-010EFA8B37A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulmaBlazor", "Src\BulmaBlazor\BulmaBlazor.csproj", "{43B887C9-7126-4DF7-B09B-49892140F458}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +34,21 @@ Global
 		{4CF5E48C-EA76-4B43-B2DD-010EFA8B37A0}.Release|x64.Build.0 = Release|Any CPU
 		{4CF5E48C-EA76-4B43-B2DD-010EFA8B37A0}.Release|x86.ActiveCfg = Release|Any CPU
 		{4CF5E48C-EA76-4B43-B2DD-010EFA8B37A0}.Release|x86.Build.0 = Release|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Debug|x64.Build.0 = Debug|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Debug|x86.Build.0 = Debug|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Release|x64.ActiveCfg = Release|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Release|x64.Build.0 = Release|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Release|x86.ActiveCfg = Release|Any CPU
+		{43B887C9-7126-4DF7-B09B-49892140F458}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4CF5E48C-EA76-4B43-B2DD-010EFA8B37A0} = {A8C204A9-8521-4016-AEC6-4C9077ACE82E}
+		{43B887C9-7126-4DF7-B09B-49892140F458} = {A8C204A9-8521-4016-AEC6-4C9077ACE82E}
 	EndGlobalSection
 EndGlobal

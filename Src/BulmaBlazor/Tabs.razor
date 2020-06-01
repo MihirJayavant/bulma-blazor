@@ -16,7 +16,7 @@
     public string ActiveName { get; set; }
 
     [Parameter]
-    public EventCallback<string> ActiveTabChanged { get; set; }
+    public EventCallback<string> ActiveNameChanged { get; set; }
 
     public void AddTab( string activeName )
     {
@@ -39,7 +39,7 @@
         if ( ActiveName != activeName )
         {
             ActiveName = activeName;
-            ActiveTabChanged.InvokeAsync( activeName );
+            ActiveNameChanged.InvokeAsync( activeName );
             StateHasChanged();
         }
     }

@@ -1,0 +1,11 @@
+@page "/breadcrumb"
+
+<Breadcrumb Items=@Items ></Breadcrumb> 
+
+@code {
+    IEnumerable<BreadcrumbItem> Items = new List<BreadcrumbItem> {
+    new BreadcrumbItem { Text="Home", Link="/breadcrumb" },
+    new BreadcrumbItem { Text="Component", Link="/breadcrumb" },
+    new BreadcrumbItem { Text="Breadcrumb", Link="/breadcrumb", IsActive=true }
+    };
+}
