@@ -9,7 +9,7 @@
     <tbody>
         @foreach (var item in Items)
         {
-            <tr @key=@item >@RowTemplate(item)</tr>
+            <tr @key=@item @onclick="e => OnClick(item)" >@RowTemplate(item)</tr>
         }
     </tbody>
     <tfoot>
@@ -29,4 +29,12 @@
 
     [Parameter]
     public IEnumerable<TItem> Items { get; set; }
+
+    [Parameter]
+    public EventCallback<TItem> OnRowClick { get; set; }
+
+    void OnClick( TItem item )
+    {
+        OnRowClick.InvokeAsync( item );
+    }
 }

@@ -5,7 +5,16 @@
     <Tab Name="Picture">Picture</Tab>
 </Tabs>
 
-<span>@tabSelected</span>
+<div class="container">
+    <TabContent ActiveName="@tabSelected">
+        <TabContentItem Name="Music">
+            <div>Hear the music</div>
+        </TabContentItem>
+        <TabContentItem Name="Picture">
+            <div>See the Picture</div>
+        </TabContentItem>
+    </TabContent>
+</div>
 
 @code {
     string tabSelected;

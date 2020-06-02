@@ -1,0 +1,16 @@
+@if(ActiveName == Name)
+{
+    @ChildContent
+}
+
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [CascadingParameter]
+    public string ActiveName { get; set; }
+
+    [Parameter]
+    public string Name { get; set; }
+}
