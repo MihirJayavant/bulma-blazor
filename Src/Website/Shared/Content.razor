@@ -1,0 +1,12 @@
+<div class="content app-content">
+    <h1>@Title</h1>
+    <p>@ChildContent</p>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

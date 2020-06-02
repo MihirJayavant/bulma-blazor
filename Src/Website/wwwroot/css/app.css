@@ -50,3 +50,7 @@ pre code {
   border: 1px solid hsl(0, 0%, 90%);
   margin: 10px;
 }
+
+.app-content {
+  margin: 10px;
+}

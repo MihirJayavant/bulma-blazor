@@ -1,6 +1,9 @@
 @page "/"
 
 <!--Default button-->
+<Content Title="Button">
+    Button can be used as a normal html button or as reset and submit button.
+</Content>
 <Snippet>
     <Output>
         <Button>Button</Button>
@@ -15,6 +18,9 @@
 </Snippet>
 
 <!--Color button-->
+<Content Title="Colors">
+    The button is available in all the <b>different colors</b>.
+</Content>
 <Snippet>
     <Output>
         <div class="buttons">
@@ -44,6 +50,11 @@
 </Snippet>
 
 <!--Light color button-->
+<Content>
+    Each color now comes in its light version. Simply append the modifier  
+    <code>is-light</code> to the color modifier to apply the light 
+    version of the button.
+</Content>
 <Snippet>
     <Output>
         <div class="buttons">
@@ -73,6 +84,9 @@
 </Snippet>
 
 <!--B/W button-->
+<Content >
+    The button are also available in black and white theme.
+</Content>
 <Snippet>
     <Output>
         <Button class="is-white">White</Button>
@@ -88,6 +102,92 @@
 @("<Button class=\"is-black\">Black</Button>") 
 @("<Button class=\"is-text\">Text</Button>")       
     </Code>
+</Snippet>
+
+<!--Sizes-->
+<Content Title="Sizes">
+The button comes in 4 different sizes:
+<ul>
+    <li>small</li>
+    <li>normal</li>
+    <li>medium</li>
+    <li>large</li>
+</ul>
+
+While the default size is the normal one, the <code>is-normal</code> modifier exists 
+in case you need to reset the button to its normal size.
+</Content>
+
+<Snippet>
+    <Output>
+        <Button class="is-small">Small</Button>
+        <Button>Default</Button>
+        <Button class="is-normal">Normal</Button>
+        <Button class="is-medium">Medium</Button>
+        <Button class="is-large">Large</Button>
+    </Output>
+        <Code>
+@("<Button class=\"is-small\">Small</Button>")
+@("<Button>Default</Button>")
+@("<Button class=\"is-normal\">Normal</Button>")
+@("<Button class=\"is-medium\">Medium</Button>") 
+@("<Button class=\"is-large\">Large</Button>")       
+    </Code>
+
+</Snippet>
+
+<Content>
+    You can change the size of multiple buttons at once by wrapping 
+    them in a <code>buttons</code> parent, and applying one of 3 modifiers:
+
+    <ul>
+        <li>are-small</li>
+        <li>are-medium</li>
+        <li>are-large</li>
+    </ul>
+</Content>
+<Snippet>
+    <Output>
+        <div class="buttons are-medium">
+            <Button>All</Button>
+            <Button>Medium</Button>
+            <Button>Size</Button>
+        </div>
+    </Output>
+    <Code>
+@("<Button>All</Button>")
+@("<Button>Medium</Button>")
+@("<Button>Size</Button>")     
+    </Code>
+
+</Snippet>
+
+<!--Styles-->
+<Content Title="Styles">
+    Outlined
+</Content>
+<Snippet>
+    <Output>
+        <div class="buttons">
+            <Button class="is-outlined">Outlined</Button>
+            <Button class="is-primary is-outlined">Outlined</Button>
+            <Button class="is-link is-outlined">Outlined</Button>
+            <Button class="is-info is-outlined">Outlined</Button>
+            <Button class="is-success is-outlined">Outlined</Button>
+            <Button class="is-danger is-outlined">Outlined</Button>
+        </div>
+    </Output>
+    <Code>
+@("<div class=\"buttons\">")
+    @("<Button class=\"is-outlined\">Outlined</Button>")
+    @("<Button class=\"is-primary is-outlined\">Outlined</Button>")
+    @("<Button class=\"is-link is-outlined\">Outlined</Button>")
+    @("<Button class=\"is-info is-outlined\">Outlined</Button>")
+    @("<Button class=\"is-success is-outlined\">Outlined</Button>")
+    @("<Button class=\"is-danger is-outlined\">Outlined</Button>")
+@("</div>") 
+    </Code>
+
 </Snippet>
 
 @code {
