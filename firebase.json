@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "Src/Website/dist/wwwroot",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
