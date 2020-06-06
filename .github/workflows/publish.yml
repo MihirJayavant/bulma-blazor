@@ -1,4 +1,4 @@
-name: firebase
+name: publish
 on:
   release:
     types: [created]
@@ -17,10 +17,7 @@ jobs:
         run: dotnet restore
       - name: publish
         run: dotnet publish --configuration Release --no-restore
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+      - name: Pack with dotnet
+        run: dotnet pack Src/BulmaBlazor/BulmaBlazor.csproj --output nuget-packages --configuration Release
+      - name: Push with dotnet
+        run: dotnet nuget push nuget-packages/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
