@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: publish
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,8 +16,8 @@ jobs:
           dotnet-version: 3.1.300
       - name: Install dependencies
         run: dotnet restore
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
+      - name: publish
+        run: dotnet publish --configuration Release --no-restore
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
