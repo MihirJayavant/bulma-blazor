@@ -1,13 +1,13 @@
 @inject IJSRuntime jsRuntime
 
 <div class="snippet">
-    <div class="columns">
-        <div class="column is-6">
+    <div class="columns is-multiline">
+        <div class="column @GetAlignment">
             <div class="output"> 
                 @Output
             </div>
         </div>
-        <div class="column is-6">
+        <div class="column @GetAlignment">
             <div class="code">
                 <pre> <code class="html" @ref="codeRef"> @Code </code> </pre>
             </div>
@@ -22,13 +22,18 @@
     [Parameter]
     public RenderFragment Code { get; set; }
 
+    [Parameter]
+    public bool IsVertical { get; set; }
+
+    private string GetAlignment => IsVertical ? "is-full" : "is-6";
+
     private ElementReference codeRef;
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override async Task OnAfterRenderAsync( bool firstRender )
     {
-        if (firstRender)
+        if ( firstRender )
         {
-            await jsRuntime.InvokeVoidAsync("w3CodeColor", codeRef);
+            await jsRuntime.InvokeVoidAsync( "w3CodeColor", codeRef );
         }
     }
 
