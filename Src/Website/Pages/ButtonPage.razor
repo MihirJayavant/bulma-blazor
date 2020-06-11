@@ -192,6 +192,192 @@ in case you need to reset the button to its normal size.
 
 </Snippet>
 
+<!--Rounded Buttons-->
+<Content>
+    Rounded Buttons
+</Content>
+<Snippet>
+    <Output>
+        <div class="buttons">
+            <Button class="is-rounded">Rounded</Button>
+            <Button class="is-primary is-rounded">Rounded</Button>
+            <Button class="is-link is-rounded">Rounded</Button>
+            <Button class="is-info is-rounded">Rounded</Button>
+            <Button class="is-success is-rounded">Rounded</Button>
+            <Button class="is-danger is-rounded">Rounded</Button>
+        </div>
+    </Output>
+    <Code>
+@("<div class=\"buttons\">")
+    @("<Button class=\"is-rounded\">Rounded</Button>")
+    @("<Button class=\"is-primary is-rounded\">Rounded</Button>")
+    @("<Button class=\"is-link is-rounded\">Rounded</Button>")
+    @("<Button class=\"is-info is-rounded\">Rounded</Button>")
+    @("<Button class=\"is-success is-rounded\">Rounded</Button>")
+    @("<Button class=\"is-danger is-rounded\">Rounded</Button>")
+@("</div>") 
+    </Code>
+
+</Snippet>
+
+<!--Loading Buttons-->
+<Content>
+    Loading <br>
+    <p>
+    You can very easily turn a button into its loading version by appending 
+    the is-loading modifier. You don't even need to remove the inner text, 
+    which allows the button to maintain its original size between its default 
+    and loading states.
+    </p>
+</Content>
+<Snippet>
+    <Output>
+        <div class="buttons">
+            <Button class="" IsLoading=@true>Loading</Button>
+            <Button class="is-primary" IsLoading=@true>Loading</Button>
+            <Button class="is-link" IsLoading=@true>Loading</Button>
+            <Button class="is-info" IsLoading=@true>Loading</Button>
+            <Button class="is-success" IsLoading=@true>Loading</Button>
+            <Button class="is-danger" IsLoading=@true>Loading</Button>
+        </div>
+    </Output>
+    <Code>
+@("<div class=\"buttons\">")
+    @("<Button IsLoading=@variable>Loading</Button>")
+    @("<Button class=\"is-primary \" IsLoading=@variable>Loading</Button>")
+    @("<Button class=\"is-link \" IsLoading=@variable>Loading</Button>")
+    @("<Button class=\"is-info \" IsLoading=@variable>Loading</Button>")
+    @("<Button class=\"is-success \" IsLoading=@variable>Loading</Button>")
+    @("<Button class=\"is-danger \" IsLoading=@variable>Loading</Button>")
+@("</div>") 
+    </Code>
+
+</Snippet>
+
+
+<!--Disable Buttons-->
+<Content>
+    Disabled <br>
+    <p>
+        You can easily disable a button based on bool value of variable.
+    </p>
+</Content>
+<Snippet>
+    <Output>
+        <div class="buttons">
+            <Button class="" disabled=@true>Disabled</Button>
+            <Button class="is-primary" disabled=@true>Disabled</Button>
+            <Button class="is-link" disabled=@true>Disabled</Button>
+            <Button class="is-info" disabled=@true>Disabled</Button>
+            <Button class="is-success" disabled=@true>Disabled</Button>
+            <Button class="is-danger" disabled=@true>Disabled</Button>
+        </div>
+    </Output>
+    <Code>
+@("<div class=\"buttons\">")
+    @("<Button disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-primary\" disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-link\" disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-info\" disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-success\" disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-danger\" disabled=@variable>Loading</Button>")
+@("</div>") 
+    </Code>
+</Snippet>
+
+<!--Icon Buttons-->
+<Content Title="With Font Awesome icons">
+    <p>
+BulmaBLazor buttons can easily be enhanced by adding a Font Awesome icon.
+For the best results, wrap the inner text in a separate span element.
+</p>
+</Content>
+
+<Snippet>
+    <Output>
+        <p class="buttons">
+            <Button>
+                <span class="icon is-small">
+                <i class="fas fa-bold"></i>
+                </span>
+            </Button>
+            <Button>
+                <span class="icon is-small">
+                <i class="fas fa-italic"></i>
+                </span>
+            </Button>
+            <Button>
+                <span class="icon is-small">
+                <i class="fas fa-underline"></i>
+                </span>
+            </Button>
+            </p>
+            <p class="buttons">
+            <Button>
+                <span class="icon">
+                <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </Button>
+            <Button class="is-primary">
+                <span class="icon">
+                <i class="fab fa-twitter"></i>
+                </span>
+                <span>@@jgthms</span>
+            </Button>
+            <Button class="is-success">
+                <span class="icon is-small">
+                <i class="fas fa-check"></i>
+                </span>
+                <span>Save</span>
+            </Button>
+            <Button class="is-danger is-outlined">
+                <span>Delete</span>
+                <span class="icon is-small">
+                <i class="fas fa-times"></i>
+                </span>
+            </Button>
+            </p>
+            <p class="buttons">
+            <Button class="is-small">
+                <span class="icon is-small">
+                <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </Button>
+            <Button>
+                <span class="icon">
+                <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </Button>
+            <Button class="is-medium">
+                <span class="icon">
+                <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </Button>
+            <Button class="is-large">
+                <span class="icon is-medium">
+                <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+            </Button>
+        </p>
+    </Output>
+    <Code>
+@("<div class=\"buttons\">")
+    @("<Button disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-primary\" disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-link\" disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-info\" disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-success\" disabled=@variable>Loading</Button>")
+    @("<Button class=\"is-danger\" disabled=@variable>Loading</Button>")
+@("</div>") 
+     </Code>
+</Snippet>
+
+
 
 @code {
 }
