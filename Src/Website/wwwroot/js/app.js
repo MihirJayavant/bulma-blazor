@@ -11,9 +11,9 @@ function w3CodeColor(elmnt, mode) {
     var elmntObj = (document.getElementById(elmnt) || elmnt);
     var elmntTxt = elmntObj.innerHTML;
     var tagcolor = "mediumblue";
-    var tagnamecolor = "brown";
-    var attributecolor = "red";
-    var attributevaluecolor = "mediumblue";
+    var tagnamecolor = "hsl(204,86%,53%)";
+    var attributecolor = "#b58900";
+    var attributevaluecolor = "#2aa198";
     var commentcolor = "green";
     var cssselectorcolor = "brown";
     var csspropertycolor = "red";

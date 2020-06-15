@@ -2,7 +2,7 @@
 
 ![](https://github.com/MihirJayavant/bulma-blazor/workflows/build/badge.svg) [![NuGet version](https://badge.fury.io/nu/bulmablazor.svg)](https://badge.fury.io/nu/bulmablazor)
 
-### Bulma blazor provides prebuilt flexible component that will help you create amazing web app faster
+### BulmaBlazor provides prebuilt flexible component that will help you create amazing web app faster
 ### See the docs https://bulmablazor.web.app/
 
 ## Getting Started

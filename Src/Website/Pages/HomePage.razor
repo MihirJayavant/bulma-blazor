@@ -1,0 +1,92 @@
+@page "/"
+
+<section class="hero is-info is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        BulmaBlazor
+      </h1>
+      <h2 class="subtitle">
+        UI Component Library for Blazor
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section py-5">
+  <div class="container">
+    <h1 class="title">
+      Welcome to open source blazor component library
+    </h1>
+    <p>
+      Built on top of popular css framework <a href="https://bulma.io/"> Bulma</a>,
+      it provides greater customization over the look and feel of your components.
+      As bluma is css only framework, we have taken care of the c# logic part for you
+      so that you can focus on features that matters.
+    </p>
+  </div>
+</section>
+
+<section class="section py-5">
+    <div class="container">
+      <h1 class="title">Install</h1>
+      <div class="content">
+        <ol>
+          <li>
+            <h5>Using dotnet cli</h5>
+            <div class="mb-5">
+              <code class="px-5 py-3">dotnet add package BulmaBlazor --version 0.1.0-alpha</code>
+            </div>
+          </li>
+          <li>
+            <h5>Using  package reference</h5>
+            <div class="mb-5">
+                <code class="px-5 py-3">Install-Package BulmaBlazor -Version 0.1.0-alpha</code>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <Snippet>
+        <Output>
+          Add the bulma css cdn and fontawesome icons in the
+          <code>head</code> tag
+        </Output>
+        <Code>
+@("<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css\" />")
+@("<script defer src=\"https://use.fontawesome.com/releases/v5.3.1/js/all.js\"></script>")       
+        </Code>
+      </Snippet>
+
+      <Snippet>
+        <Output>
+          Add the import statement in your
+          <code>_import.razor</code> file
+        </Output>
+        <Code>
+@("@using BulmaBlazor.Components")
+@("@using BulmaBlazor.Models")
+        </Code>
+      </Snippet>
+
+    </div>
+</section>
+
+<section class="section py-5">
+  <div class="container">
+    <h1 class="title">
+      Checkout these colorful buttons
+    </h1>
+    <div>
+      <div class="buttons">
+        <Button class="is-primary">Button</Button>
+        <Button class="is-info">Button</Button>
+        <Button class="is-danger" IsLoading=@true>Button</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+@code {
+
+}
