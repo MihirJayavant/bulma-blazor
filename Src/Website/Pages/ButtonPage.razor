@@ -366,14 +366,63 @@ For the best results, wrap the inner text in a separate span element.
         </p>
     </Output>
     <Code>
-@("<div class=\"buttons\">")
-    @("<Button disabled=@variable>Loading</Button>")
-    @("<Button class=\"is-primary\" disabled=@variable>Loading</Button>")
-    @("<Button class=\"is-link\" disabled=@variable>Loading</Button>")
-    @("<Button class=\"is-info\" disabled=@variable>Loading</Button>")
-    @("<Button class=\"is-success\" disabled=@variable>Loading</Button>")
-    @("<Button class=\"is-danger\" disabled=@variable>Loading</Button>")
-@("</div>") 
+&lt;p class=&quot;buttons&quot;&gt; 
+    &lt;Button&gt; &lt;span class=&quot;icon is-small&quot;&gt; &lt;
+        i class=&quot;fas fa-bold&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;Button&gt; &lt;span class=&quot;icon is-small&quot;&gt; 
+        &lt;i class=&quot;fas fa-italic&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;Button&gt; &lt;span class=&quot;icon is-small&quot;&gt; 
+        &lt;i class=&quot;fas fa-underline&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt; 
+    &lt;/Button&gt;
+        &lt;/p&gt; &lt;p class=&quot;buttons&quot;&gt; 
+    &lt;Button&gt; 
+        &lt;span class=&quot;icon&quot;&gt; 
+        &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt; &lt;/span&gt; 
+        &lt;span&gt;GitHub&lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;Button class=&quot;is-primary&quot;&gt; &lt;span class=&quot;icon&quot;&gt; 
+        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt; &lt;span&gt;@@jgthms&lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;Button class=&quot;is-success&quot;&gt; 
+        &lt;span class=&quot;icon is-small&quot;&gt; 
+        &lt;i class=&quot;fas fa-check&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt; &lt;span&gt;Save&lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;Button class=&quot;is-danger is-outlined&quot;&gt; 
+        &lt;span&gt;Delete&lt;/span&gt; 
+        &lt;span class=&quot;icon is-small&quot;&gt; 
+        &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;/p&gt; 
+    &lt;p class=&quot;buttons&quot;&gt; 
+    &lt;Button class=&quot;is-small&quot;&gt; 
+        &lt;span class=&quot;icon is-small&quot;&gt; 
+            &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt; 
+            &lt;/span&gt; &lt;span&gt;GitHub
+        &lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;Button&gt; &lt;span class=&quot;icon&quot;&gt;
+        &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt; &lt;span&gt;GitHub&lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;Button class=&quot;is-medium&quot;&gt; 
+        &lt;span class=&quot;icon&quot;&gt; 
+        &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt; &lt;span&gt;GitHub&lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;Button class=&quot;is-large&quot;&gt; 
+        &lt;span class=&quot;icon is-medium&quot;&gt; 
+        &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt; &lt;span&gt;GitHub&lt;/span&gt; 
+    &lt;/Button&gt; 
+    &lt;/p&gt;
      </Code>
 </Snippet>
 
