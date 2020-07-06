@@ -7,32 +7,32 @@
                     </figure>
                 </div>
 
-                <div class="column is-full">
-                    <NavLink class="item" href="" Match="NavLinkMatch.All">
+                <div class="column is-full" >
+                    <NavLink class="item" href="" Match="NavLinkMatch.All" @onclick="OnClick">
                             <div> Home </div>
                     </NavLink>
                 </div>
 
                 <div class="column is-full">
-                    <NavLink class="item" href="/button" >
+                    <NavLink class="item" href="/button" @onclick="OnClick">
                             <div> Buttons </div>
                     </NavLink>
                 </div>
 
                 <div class="column is-full">
-                    <NavLink class="item" href="/table" >
+                    <NavLink class="item" href="/table" @onclick="OnClick">
                             <div> Tables </div>
                     </NavLink>
                 </div>
 
                 <div class="column is-full">
-                    <NavLink class="item" href="/tabs" >
+                    <NavLink class="item" href="/tabs" @onclick="OnClick">
                             <div> Tabs </div>
                     </NavLink>
                 </div>
 
                 <div class="column is-full">
-                    <NavLink class="item" href="/breadcrumb" >
+                    <NavLink class="item" href="/breadcrumb" @onclick="OnClick">
                             <div> Breadcrumb </div>
                     </NavLink>
                 </div>
@@ -41,3 +41,13 @@
 
 
 </div>
+
+@code {
+    [Parameter]
+    public EventCallback<string> OnItemClick { get; set; }
+
+    void OnClick()
+    {
+        OnItemClick.InvokeAsync( "" );
+    }
+}

@@ -1,7 +1,7 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="fixed-sidebar @ActiveClass">
-    <SideNav></SideNav>
+    <SideNav OnItemClick="@OnNavItemClick" ></SideNav>
 </div>
 
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
@@ -48,5 +48,10 @@
     private void Click()
     {
         isActive = !isActive;
+    }
+
+    public void OnNavItemClick( string s )
+    {
+        isActive = false;
     }
 }
