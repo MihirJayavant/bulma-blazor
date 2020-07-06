@@ -1,54 +1,36 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="main">
-<div class="columns is-gapless">
-    <div class="column is-2">
-        <div class="sidenav has-background-light"> 
-            <div class="columns is-gapless is-multiline is-mobile">
+<div class="fixed-sidebar @ActiveClass">
+    <SideNav OnItemClick="@OnNavItemClick" ></SideNav>
+</div>
 
-                <div class="column is-full">
-                    <figure class="image is-square">
-                        <img src="/assets/bulmablazor.png">
-                    </figure>
-                </div>
-
-                <div class="column is-full">
-                    <NavLink class="item" href="" Match="NavLinkMatch.All">
-                            <div> Home </div>
-                    </NavLink>
-                </div>
-
-                <div class="column is-full">
-                    <NavLink class="item" href="/button" >
-                            <div> Buttons </div>
-                    </NavLink>
-                </div>
-
-                <div class="column is-full">
-                    <NavLink class="item" href="/table" >
-                            <div> Tables </div>
-                    </NavLink>
-                </div>
-
-                <div class="column is-full">
-                    <NavLink class="item" href="/tabs" >
-                            <div> Tabs </div>
-                    </NavLink>
-                </div>
-
-                <div class="column is-full">
-                    <NavLink class="item" href="/breadcrumb" >
-                            <div> Breadcrumb </div>
-                    </NavLink>
-                </div>
-
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <div class="navbar-item">
+            <div class="is-hidden-tablet mr-5" @onclick="Click" >
+                <i class="fa fa-bars"></i>
             </div>
-
-
+            BulmaBlazor 
         </div>
     </div>
 
-    <div class="column is-10">
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <Icon class="is-medium" Name="fab fa-github" ></Icon>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="main">
+<div class="columns is-gapless">
+    <div class="column is-hidden-mobile is-narrow">
+        <SideNav></SideNav>
+    </div>
+
+    <div class="column">
         <div class="main-body">
             @Body
         </div>
@@ -57,3 +39,19 @@
     
 
 </div>
+
+@code {
+    private bool isActive = false;
+
+    private string ActiveClass => isActive ? "active" : "";
+
+    private void Click()
+    {
+        isActive = !isActive;
+    }
+
+    public void OnNavItemClick( string s )
+    {
+        isActive = false;
+    }
+}
