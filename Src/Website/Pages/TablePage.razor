@@ -1,15 +1,27 @@
 @page "/table"
 
-<Table Items=@pets>
-    <TableHeader>
-        <th>ID</th>
-        <th>Name</th>
-    </TableHeader>
-    <RowTemplate>
-        <td>@context.Id</td>
-        <td>@context.Name</td>
-    </RowTemplate>
-</Table>
+<Content Title="Table">
+    You can create a Bulma table simply by <code>Table</code> component.
+</Content>
+<Snippet IsVertical=@true>
+    <Output>
+        <Table Items=@pets>
+            <TableHeader>
+                <th>ID</th>
+                <th>Name</th>
+            </TableHeader>
+            <RowTemplate>
+                <td>@context.Id</td>
+                <td>@context.Name</td>
+            </RowTemplate>
+        </Table>
+    </Output>
+    <Code>
+@("<Button>Button</Button>")
+@("<Button type=\"submit\">Submit</Button>")
+@("<Button type=\"reset\">Reset</Button>") 
+    </Code>
+</Snippet>
 
 @code {
     List<Pet> pets = new List<Pet> {
