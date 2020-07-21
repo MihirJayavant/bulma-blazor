@@ -1,11 +1,14 @@
-<span class="icon @Class">
+<span class="icon @Class" @attributes="AdditionalAttributes">
   <i class="@Name"></i>
 </span>
 
 @code {
-    [Parameter]
-    public string Class { get; set; }
+  [Parameter]
+      public string Class { get; set; }
 
-    [Parameter]
-    public string Name { get; set; }
+      [Parameter]
+      public string Name { get; set; }
+
+      [Parameter( CaptureUnmatchedValues = true )]
+      public IDictionary<string, object> AdditionalAttributes { get; set; }
 }
