@@ -12,12 +12,12 @@
 
 ### Install from dotnet cli
 ```
-dotnet add package BulmaBlazor --version 0.1.0-alpha
+dotnet add package BulmaBlazor --version 0.2.0-alpha
 ```
 
 ### Install from package reference
 ```
-Install-Package BulmaBlazor -Version 0.1.0-alpha
+Install-Package BulmaBlazor -Version 0.2.0-alpha
 ```
 
 ## In Alpha version 0.1.0
