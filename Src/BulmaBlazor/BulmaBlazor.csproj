@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
-    <Version>0.3.0-alpha</Version>
+    <Version>0.4.0</Version>
     <Authors>Mihir Jayavant</Authors>
     <Company>Mihir Jayavant</Company>
     <Product>BulmaBlazor</Product>
@@ -17,7 +17,7 @@
     <Copyright>2020 Copyright Mihir Jayavant</Copyright>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageReleaseNotes>Release v0.3.0-alpha
+    <PackageReleaseNotes>Release v0.4.0
 1. Button
 2. Tabs
 3. Table

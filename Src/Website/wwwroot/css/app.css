@@ -12,7 +12,7 @@ body{
   width: 0;
   position: fixed; /* Stay in place */
   z-index: 10; /* Stay on top */
-  top: 0; /* Stay at the top */
+  top: 50px; /* Stay at the top */
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
