@@ -12,15 +12,15 @@
 
 ### Install from dotnet cli
 ```
-dotnet add package BulmaBlazor --version 0.2.0-alpha
+dotnet add package BulmaBlazor --version 0.3.0
 ```
 
 ### Install from package reference
 ```
-Install-Package BulmaBlazor -Version 0.2.0-alpha
+Install-Package BulmaBlazor -Version 0.3.0
 ```
 
-## In Alpha version 0.1.0
+## In version 0.3.0
 
 1. Button with loading
 2. Tabs
