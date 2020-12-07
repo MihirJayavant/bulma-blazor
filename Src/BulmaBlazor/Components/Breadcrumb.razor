@@ -2,8 +2,8 @@
   <ul>
     @foreach (var item in Items)
     {
-        <li>
-            <a class="@ItemClass @item.ActiveClass" href="@item.Link">
+        <li class="@item.ActiveClass">
+            <a class="@ItemClass" href="@item.Link">
                 @if (HasIcon)
                 {
                     <span class="icon is-small">
@@ -31,7 +31,5 @@
     [Parameter]
     public string ItemClass { get; set; } = "";
 
-    [Parameter]
-    public EventCallback<BreadcrumbItem> OnClick { get; set; }
 
 }

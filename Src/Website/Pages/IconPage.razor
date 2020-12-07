@@ -1,0 +1,55 @@
+@page "/icon"
+
+<!--Default button-->
+<Content Title="Icon">
+    Bulma is compatible with all icon font libraries: Font Awesome 5, 
+    Font Awesome 4, Material Design Icons, Ionicons, etc.
+    Here we are using Font Awesome.
+</Content>
+
+<Snippet>
+    <Output>
+        <Icon name="fas fa-home" ></Icon>
+    </Output>
+        <Code>
+@("<Icon name=\"fas fa-home\" ></Icon>")
+    </Code>
+</Snippet>
+
+<Content Title="Colors">
+    Since icon fonts are simply text, you can use the color helpers to change the icon's color.
+</Content>
+
+<Snippet>
+    <Output>
+        <Icon name="fas fa-info-circle" class="has-text-info"></Icon>
+        <Icon name="fas fa-check-square" class="has-text-success"></Icon>
+        <Icon name="fas fa-exclamation-triangle" class="has-text-warning"></Icon>
+        <Icon name="fas fa-ban" class="has-text-danger"></Icon>
+    </Output>
+        <Code>
+@("<Icon name=\"fas fa-info-circle\" class=\"has-text-info\"></Icon>")
+@("<Icon name=\"fas fa-check-square\" class=\"has-text-success\"></Icon>")
+@("<Icon name=\"fas fa-exclamation-triangle\" class=\"has-text-warning\"></Icon>")
+@("<Icon name=\"fas fa-ban\" class=\"has-text-danger\"></Icon>")
+    </Code>
+</Snippet>
+
+<Content Title="Sizes">
+    The BulmaBlazor icon container comes in 4 sizes. It should always be slightly bigger than the icon it contains.
+</Content>
+
+<Snippet>
+    <Output>
+        <Icon name="fas fa-home" class="is-small"></Icon>
+        <Icon name="fas fa-home fa-lg"></Icon>
+        <Icon name="fas fa-home fa-2x" class="is-medium"></Icon>
+        <Icon name="fas fa-home fa-3x" class="is-large"></Icon>
+    </Output>
+        <Code>
+@("<Icon name=\"fas fa-home\" class=\"is-small\" ></Icon>")
+@("<Icon name=\"fas fa-home fa-lg\" ></Icon>")
+@("<Icon name=\"fas fa-home fa-2x\" class=\"is-medium\" ></Icon>")
+@("<Icon name=\"fas fa-home fa-3x\" class=\"is-large\" ></Icon>")
+    </Code>
+</Snippet>

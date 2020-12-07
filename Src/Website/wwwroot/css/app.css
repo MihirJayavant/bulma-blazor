@@ -12,7 +12,7 @@ body{
   width: 0;
   position: fixed; /* Stay in place */
   z-index: 10; /* Stay on top */
-  top: 0; /* Stay at the top */
+  top: 50px; /* Stay at the top */
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
@@ -69,4 +69,23 @@ pre code {
 
 .app-content {
   margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.progress-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress-container progress {
+  width: 90%;
 }
