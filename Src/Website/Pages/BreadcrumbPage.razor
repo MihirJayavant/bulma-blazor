@@ -1,11 +1,37 @@
 @page "/breadcrumb"
 
-<Breadcrumb Items=@Items ></Breadcrumb> 
+<Content Title="Breadcrumb">
+    The Bulma breadcrumb is a simple navigation component that only requires 
+    a <code>breadcrumb</code> container and a list of items. 
+    The dividers are automatically created.
 
-@code {
+    You can inform the current page by setting the IsActive property in
+    <code>BreadcrumbItem</code> class to <code>true</code>. 
+    It will disable the navigation of inner links
+</Content>
+
+<Snippet IsVertical=true>
+    <Output>
+        <Breadcrumb Items=@Items ></Breadcrumb> 
+    </Output>
+    <Code>
+@("<Breadcrumb Items=@Items ></Breadcrumb> ")
+@("@code {")
+    @("IEnumerable<BreadcrumbItem> Items = new List<BreadcrumbItem> {") 
+        @("new BreadcrumbItem { Text=\"Home\", Link=\"/\" },")
+        @("new BreadcrumbItem { Text=\"Component\", Link=\"/\" },")
+        @("new BreadcrumbItem { Text=\"Breadcrumb\", Link=\"/breadcrumb\", IsActive=true }")
+    @("};")
+@("}")
+    </Code>
+</Snippet>
+
+
+@code 
+{
     IEnumerable<BreadcrumbItem> Items = new List<BreadcrumbItem> {
-    new BreadcrumbItem { Text="Home", Link="/breadcrumb" },
-    new BreadcrumbItem { Text="Component", Link="/breadcrumb" },
+    new BreadcrumbItem { Text="Home", Link="/" },
+    new BreadcrumbItem { Text="Component", Link="/" },
     new BreadcrumbItem { Text="Breadcrumb", Link="/breadcrumb", IsActive=true }
     };
 }

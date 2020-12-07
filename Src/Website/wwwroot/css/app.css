@@ -76,3 +76,16 @@ pre code {
   grid-template-columns: 250px 1fr;
   grid-template-rows: auto 1fr;
 }
+
+.progress-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress-container progress {
+  width: 90%;
+}

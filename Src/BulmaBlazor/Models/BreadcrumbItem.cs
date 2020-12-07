@@ -1,11 +1,11 @@
 namespace BulmaBlazor.Models
 {
-    public class BreadcrumbItem
+    public record BreadcrumbItem
     {
-        public string Text { get; set; }
-        public string Link { get; set; }
-        public bool IsActive { get; set; } = false;
-        public string IconClass { get; set; } = "";
+        public string Text { get; init; }
+        public string Link { get; init; }
+        public bool IsActive { get; init; } = false;
+        public string IconClass { get; init; } = "";
         public string ActiveClass => IsActive ? "is-active" : "";
     }
 }
