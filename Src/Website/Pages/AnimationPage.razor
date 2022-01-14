@@ -1,0 +1,22 @@
+@page "/animation"
+
+@if (isVisible)
+{
+    <Animation>
+        <div class="animatebox">
+        </div>
+    </Animation>
+}
+
+<div>
+    <button class="button is-primary" @onclick="OnClick">click</button>
+</div>
+
+@code {
+    public bool isVisible = true;
+
+    void OnClick()
+    {
+        isVisible = !isVisible;
+    }
+}

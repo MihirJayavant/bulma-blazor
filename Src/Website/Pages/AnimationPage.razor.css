@@ -1,0 +1,12 @@
+.animatebox {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: violet;
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+.enter .animatebox {
+  transform: scale(0.8);
+}

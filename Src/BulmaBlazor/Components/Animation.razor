@@ -1,0 +1,28 @@
+@implements IDisposable
+
+<div class="@animationClass">
+    @ChildContent
+</div>
+
+@code {
+
+    private string animationClass = "enter";
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            System.Console.WriteLine("OnAfterRender");
+            animationClass = "";
+            StateHasChanged();
+        }
+    }
+
+    public void Dispose()
+    {
+        animationClass = "exit";
+    }
+}
