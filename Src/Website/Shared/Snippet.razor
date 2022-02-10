@@ -3,7 +3,7 @@
 <div class="snippet">
     <div class="columns is-multiline">
         <div class="column @GetAlignment">
-            <div class="output"> 
+            <div class="output">
                 @Output
             </div>
         </div>
@@ -29,11 +29,11 @@
 
     private ElementReference codeRef;
 
-    protected override async Task OnAfterRenderAsync( bool firstRender )
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if ( firstRender )
+        if (firstRender)
         {
-            await jsRuntime.InvokeVoidAsync( "w3CodeColor", codeRef );
+            await jsRuntime.InvokeVoidAsync("w3CodeColor", codeRef);
         }
     }
 
