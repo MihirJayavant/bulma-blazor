@@ -1,23 +1,23 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="fixed-sidebar @ActiveClass">
-    <SideNav OnItemClick="@OnNavItemClick" ></SideNav>
+    <SideNav OnItemClick="@OnNavItemClick"></SideNav>
 </div>
 
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <div class="navbar-item">
-            <div class="is-hidden-tablet mr-5" @onclick="Click" >
+            <div class="is-hidden-tablet mr-5" @onclick="Click">
                 <i class="fa fa-bars"></i>
             </div>
-            BulmaBlazor 
+            BulmaBlazor
         </div>
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
             <div class="navbar-item">
-                <Icon class="is-medium" Name="fab fa-github" ></Icon>
+                <Icon class="is-medium" Name="fab fa-github"></Icon>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
         isActive = !isActive;
     }
 
-    public void OnNavItemClick( string s )
+    public void OnNavItemClick(string s)
     {
         isActive = false;
     }
