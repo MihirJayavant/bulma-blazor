@@ -1,0 +1,23 @@
+.animatebox {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: violet;
+  animation-name: scaleup;
+  animation-duration: 1s;
+}
+
+@keyframes scaleup {
+  from {transform: scale(0.2);}
+  to {transform: scale(1.0);}
+}
+
+@keyframes scaledown {
+  from {transform: scale(1.0);}
+  to {transform: scale(0.2);}
+}
+
+.exit .animatebox {
+  animation-name: scaledown;
+  animation-duration: 1s;
+}

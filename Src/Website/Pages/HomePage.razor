@@ -4,7 +4,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        BulmaBlazor
+        Bulma Blazor
       </h1>
       <h2 class="subtitle">
         UI Component Library for Blazor
@@ -28,48 +28,48 @@
 </section>
 
 <section class="section py-5">
-    <div class="container">
-      <h1 class="title">Install</h1>
-      <div class="content">
-        <ol>
-          <li>
-            <h5>Using dotnet cli</h5>
-            <div class="mb-5">
-              <code class="px-5 py-3">dotnet add package BulmaBlazor --version 0.3.0</code>
-            </div>
-          </li>
-          <li>
-            <h5>Using  package reference</h5>
-            <div class="mb-5">
-                <code class="px-5 py-3">Install-Package BulmaBlazor -Version 0.3.0</code>
-            </div>
-          </li>
-        </ol>
-      </div>
+  <div class="container">
+    <h1 class="title">Install</h1>
+    <div class="content">
+      <ol>
+        <li>
+          <h5>Using dotnet cli</h5>
+          <div class="mb-5">
+            <code class="px-5 py-3">dotnet add package BulmaBlazor --version 0.5.0</code>
+          </div>
+        </li>
+        <li>
+          <h5>Using package reference</h5>
+          <div class="mb-5">
+            <code class="px-5 py-3">Install-Package BulmaBlazor -Version 0.5.0</code>
+          </div>
+        </li>
+      </ol>
+    </div>
 
-      <Snippet>
-        <Output>
-          Add the bulma css cdn and fontawesome icons in the
-          <code>head</code> tag
-        </Output>
-        <Code>
+    <Snippet>
+      <Output>
+        Add the bulma css cdn and fontawesome icons in the
+        <code>head</code> tag
+      </Output>
+      <Code>
 @("<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css\" />")
 @("<script defer src=\"https://use.fontawesome.com/releases/v5.14.0/js/all.js\"></script>")       
         </Code>
-      </Snippet>
+    </Snippet>
 
-      <Snippet>
-        <Output>
-          Add the import statement in your
-          <code>_import.razor</code> file
-        </Output>
-        <Code>
+    <Snippet>
+      <Output>
+        Add the import statement in your
+        <code>_import.razor</code> file
+      </Output>
+      <Code>
 @("@using BulmaBlazor.Components")
 @("@using BulmaBlazor.Models")
         </Code>
-      </Snippet>
+    </Snippet>
 
-    </div>
+  </div>
 </section>
 
 <section class="section py-5">
