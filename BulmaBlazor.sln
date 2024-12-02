@@ -1,13 +1,13 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{A8C204A9-8521-4016-AEC6-4C9077ACE82E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Src\Website\Website.csproj", "{4CF5E48C-EA76-4B43-B2DD-010EFA8B37A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Website", "Src\Website\Website.csproj", "{4CF5E48C-EA76-4B43-B2DD-010EFA8B37A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulmaBlazor", "Src\BulmaBlazor\BulmaBlazor.csproj", "{43B887C9-7126-4DF7-B09B-49892140F458}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulmaBlazor", "Src\BulmaBlazor\BulmaBlazor.csproj", "{43B887C9-7126-4DF7-B09B-49892140F458}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

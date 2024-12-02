@@ -36,7 +36,7 @@ body{
 
 .sidenav .item {
   width: 100%;
-  color: hsl(0, 0%, 21%);
+  color: var(--bulma-label-color);
 }
 
 .sidenav .item div {

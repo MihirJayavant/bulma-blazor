@@ -1,9 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
-    <Version>0.5.0</Version>
+    <Version>1.0.0</Version>
     <Authors>Mihir Jayavant</Authors>
     <Company>Mihir Jayavant</Company>
     <Product>BulmaBlazor</Product>
@@ -17,30 +16,23 @@
     <Copyright>2020 Copyright Mihir Jayavant</Copyright>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageReleaseNotes>Release v0.5.0
-1. Button
-2. Tabs
-3. Table
-4. Breadcrumb
-5. Icon</PackageReleaseNotes>
+    <PackageReleaseNotes>Release v1.0.0: Upgrade to .Net 9
+    </PackageReleaseNotes>
   </PropertyGroup>
-
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" />
   </ItemGroup>
-
-
   <ItemGroup>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>
+      </PackagePath>
     </None>
     <None Include="assets\bulmablazor4.png">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>
+      </PackagePath>
     </None>
   </ItemGroup>
-
 </Project>
