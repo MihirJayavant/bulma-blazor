@@ -8,6 +8,13 @@ body{
   overflow: hidden;
 }
 
+:root {
+  --sidenav-color-hover: hsl(0, 0%, 84%);
+  @media (prefers-color-scheme: dark) {
+    --sidenav-color-hover: hsl(0, 0%, 16%);
+  }
+}
+
 .fixed-sidebar {
   width: 0;
   position: fixed; /* Stay in place */
@@ -46,7 +53,7 @@ body{
 }
 
 .sidenav .item div:hover {
-  background-color: hsl(0, 0%, 71%);
+  background-color: var(--sidenav-color-hover);
 }
 
 .sidenav .active div {
